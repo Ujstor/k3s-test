@@ -12,7 +12,7 @@ argocd-k3s:
           nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
         extraTls:
           - hosts:
-            - argocd.k3s.ujstor.test.com
+            - argocd.k3s.test.ujstor.test.com
             secretName: argocd-ingress-tls
 
     redis-ha:
