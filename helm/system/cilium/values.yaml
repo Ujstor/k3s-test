@@ -1,0 +1,22 @@
+cilium-k3s:
+  cilium:
+    k8sServiceHost: 127.0.0.1
+    ipam:
+      mode: "kubernetes"
+      operator:
+        clusterPoolIPv4PodCIDRList: 10.42.0.0/16
+    ipv4NativeRoutingCIDR: "10.42.0.0/16"
+
+    routingMode: "native" #Single node
+    autoDirectNodeRoutes: true #Single node
+
+    nodeinit:
+      enabled: true
+      reconfigureKubelet: false #k3s
+      removeCbrBridge: true
+
+    encryption:
+      enabled: false
+
+    operator:
+      replicas: 1

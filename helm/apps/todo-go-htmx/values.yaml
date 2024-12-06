@@ -1,0 +1,8 @@
+todo-go-htmx:
+  ingress:
+    hosts:
+      - host: todo.test.ujstor.com
+    tls:
+     - secretName: todo-htmx-tls
+       hosts:
+         - todo.test.ujstor.com
