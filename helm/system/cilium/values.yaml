@@ -4,8 +4,8 @@ cilium-k3s:
     ipam:
       mode: "kubernetes"
       operator:
-        clusterPoolIPv4PodCIDRList: 10.42.0.0/16
-    ipv4NativeRoutingCIDR: "10.42.0.0/16"
+        clusterPoolIPv4PodCIDRList: 10.255.0.0/16
+    ipv4NativeRoutingCIDR: "10.255.0.0/16"
 
     routingMode: "native" #Single node
     autoDirectNodeRoutes: true #Single node
