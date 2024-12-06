@@ -31,8 +31,8 @@ module "bootstrap_server" {
 
   server_config = {
     bootstrap = {
-      location     = "hel1"
-      server_type  = "cx22"
+      location     = "fsn1"
+      server_type  = "cx32"
       ipv6_enabled = false
     }
   }

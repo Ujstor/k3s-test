@@ -9,3 +9,4 @@ dependencies:
 - name: todo-go-htmx
   version: 1.0.0
   repository: "https://ujstor.github.io/helm-charts-github-apps"
+  alias: todo

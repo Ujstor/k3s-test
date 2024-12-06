@@ -1,8 +1,16 @@
-todo-go-htmx:
+todo:
   ingress:
+    enabled: true
+    className: "nginx"
+    annotations: 
+      cert-manager.io/cluster-issuer: "letsencrypt" 
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
     hosts:
       - host: todo.test.ujstor.com
+        paths:
+          - path: /
+            pathType: Prefix
     tls:
-     - secretName: todo-htmx-tls
+     - secretName: todo-htmx-tls 
        hosts:
          - todo.test.ujstor.com
